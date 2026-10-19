@@ -1,0 +1,107 @@
+/* style.css - DO NOT STEAL MY LAYOUT!!! */
+
+body {
+  background-color: #6E96C8;
+  background-image: url(img/flag.gif);
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: pixelated;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 10px;
+}
+
+a:link    { color: #0000CC; }
+a:visited { color: #660099; }
+a:hover   { color: #FF0000; background-color: #FFFF00; }
+
+.main {
+  image-rendering: auto;
+  background-color: #FFFFFF;
+  border: 2px solid #0038B8;
+}
+
+.header {
+  background-color: #0038B8;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 4px;
+  border-bottom: 4px double #FFFFFF;
+}
+.logo {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000000;
+}
+.dotcom { color: #FFFF00; }
+
+.nav {
+  background-color: #DDE6FF;
+  border-right: 1px dashed #0038B8;
+  padding: 8px;
+  font-size: 11px;
+}
+
+.content { padding: 10px 14px; }
+
+h1 { font-family: "Times New Roman", Times, serif; color: #0038B8; font-size: 26px; margin: 4px 0 8px 0; }
+h2 { font-family: Arial, Helvetica, sans-serif; color: #0038B8; font-size: 16px; text-decoration: underline; }
+
+.bigbox { background-color: #FFFFCC; border-color: #0038B8; }
+
+.donate {
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 24px;
+  color: #FF0000 !important;
+  text-decoration: none;
+  border: 3px outset #FF6666;
+  background-color: #FFFF00;
+  padding: 4px 12px;
+}
+.donate:hover { border-style: inset; }
+
+.btn {
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  background-color: #D4D0C8;
+  border: 2px outset #FFFFFF;
+}
+
+.blink { animation: blinker 1s steps(1) infinite; }
+@keyframes blinker { 50% { visibility: hidden; } }
+
+.result { font-weight: bold; color: #006600; margin-top: 6px; }
+
+.gb { background-color: #F0F0F0; border: 1px solid #999999; padding: 8px; }
+.gbline { border: 0; border-top: 1px dotted #999999; }
+
+.footer {
+  background-color: #C0C0C0;
+  border-top: 2px solid #0038B8;
+  text-align: center;
+  padding: 8px;
+  font-size: 11px;
+}
+.counter {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000000;
+  color: #00FF00;
+  padding: 1px 4px;
+  letter-spacing: 2px;
+}
+
+.pix { image-rendering: pixelated; }
+
+.bar { width: 300px; height: 18px; border: 2px inset #FFFFFF; background: #FFFFFF; text-align: left; }
+.barfill { width: 0; height: 100%; background-color: #000080; }
+
+/* the iphone just came out, gotta support it i guess */
+@media (max-width: 780px) {
+  table.main { width: 100% !important; }
+  .nav { display: none; }
+  .logo { font-size: 20px; }
+}
